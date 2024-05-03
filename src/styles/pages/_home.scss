@@ -1,0 +1,18 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  &__content-wrapper {
+    width: 80%;
+    // background-color: #8de8fe;
+    border-radius: 10px;
+  }
+  &__content-wrapper h1 {
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+}

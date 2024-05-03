@@ -1,0 +1,22 @@
+.city {
+  padding: 3rem;
+
+  @media screen and (max-width: 600px) {
+    padding: 3rem 0;
+  }
+
+  &__name {
+    color: #8de8fe;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+a.retourhome {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  text-transform: uppercase;
+  &:hover {
+    color: rgb(228, 15, 15);
+  }
+}

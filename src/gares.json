@@ -1,0 +1,63 @@
+{
+  "bordeaux": {
+    "Bordeaux Saint-Jean": "stop_area:SNCF:87581009"
+  },
+  "brest": {
+    "Gare de Brest": "stop_area:SNCF:87474007"
+  },
+  "lille": {
+    "Lille Flandres": "stop_area:SNCF:87286005",
+    "Lille Europe": "stop_area:SNCF:87223263"
+  },
+  "lyon": {
+    "Lyon Part Dieu": "stop_area:SNCF:87723197",
+    "Lyon Perrache": "stop_area:SNCF:87722025"
+  },
+  "marseille": {
+    "Marseille Saint-Charles": "stop_area:SNCF:87751008"
+  },
+  "nantes": {
+    "Gare de Nantes": "stop_area:SNCF:87481002"
+  },
+  "angers": {
+    "Angers-Maitre-Ecole ": "stop_area:SNCF:87484048",
+    "Angers-St-Laud ": "stop_area:SNCF:87484006",
+    "Angers-St-Serge ": "stop_area:SNCF:87484022"
+  },
+  "paris": {
+    "Gare de Lyon": "stop_area:SNCF:87686006",
+    "Gare Montparnasse": "stop_area:SNCF:87391003",
+    "Gare de L'Est": "stop_area:SNCF:87113001",
+    "Gare du Nord": "stop_area:SNCF:87271007"
+  },
+  "la roche": {
+    "gare la Roche": "stop_area:SNCF:87486019"
+  },
+  "cannes": {
+    "gare de cannes": "stop_area:SNCF:87757625"
+  },
+  "strasbourg": {
+    "Gare de Strasbourg": "stop_area:SNCF:87212027"
+  },
+  "toulouse": {
+    "Toulouse Matabiau": "stop_area:SNCF:87611004"
+  },
+  "belleville": {
+    "Gare Belleville-Vendee": "stop_area:SNCF:87486142"
+  },
+  "toulon": {
+    "Gare de toulon": "stop_area:SNCF:87755009"
+  },
+  "grau du roi": {
+    "Gare grau du roi": "stop_area:SNCF:87775866"
+  },
+  "Düsseldorf": {
+    "Gare de Düsseldorf": "stop_area:SNCF:80080945"
+  },
+  "de gaulle": {
+    "Gare de l'aeroport Charles de Gaulle": "stop_area:SNCF:87271494"
+  },
+  "nimes": {
+    "Gare de nimes": "stop_area:SNCF:87775007"
+  }
+}
