@@ -16,7 +16,7 @@ console.log(nextDepartures);
         `https://api.sncf.com/v1/coverage/sncf/stop_areas/${codeStation}/departures`,
         {
           headers: {
-            Authorization: `${process.env.REACT_APP_API_KEY}`,
+            Authorization: `${import.meta.env.VITE_API_KEY}`,
           },
         }
       )
