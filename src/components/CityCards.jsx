@@ -28,6 +28,7 @@
 
 import React from 'react'
 import stations from '../gares.json'
+// import traindata from "../train"
 import CityCard from './CityCard'
 
 
