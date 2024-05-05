@@ -1,8 +1,8 @@
 import React from 'react'
 import { Outlet, useParams } from 'react-router-dom'
 import citiesStations from '../gares.json'
-
 import TrainStations from '../components/TrainStations'
+
 
 function City() {
   const { city } = useParams()

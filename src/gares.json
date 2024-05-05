@@ -29,6 +29,7 @@
     "Gare Montparnasse": "stop_area:SNCF:87391003",
     "Gare de L'Est": "stop_area:SNCF:87113001",
     "Gare du Nord": "stop_area:SNCF:87271007"
+    
   },
   "la roche": {
     "gare la Roche": "stop_area:SNCF:87486019"
@@ -59,5 +60,8 @@
   },
   "nimes": {
     "Gare de nimes": "stop_area:SNCF:87775007"
+  },
+  "Saint-Rémy-lès-Chevreuse": {
+    "Gare de Saint-Rémy-lès-Chevreuse": "stop_area:SNCF:87758896"
   }
 }

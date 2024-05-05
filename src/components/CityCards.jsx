@@ -30,6 +30,7 @@ import React from 'react'
 import stations from '../gares.json'
 import CityCard from './CityCard'
 
+
 function CityCards() {
   const cities = Object.keys(stations)
   return (

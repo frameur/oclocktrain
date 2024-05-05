@@ -3,6 +3,7 @@ import propTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 function CityCard({ city }) {
+  console.log(city);
   return (
     <Link
       to={`${city}`}
