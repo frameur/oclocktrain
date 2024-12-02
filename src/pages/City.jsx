@@ -15,6 +15,7 @@ function City() {
       </a>
       <h2 className="city__name">{city}</h2>
       {cityData && <TrainStations stations={cityData} />}
+      
       <Outlet />
     </div>
   );
