@@ -1,46 +1,38 @@
-// import React from 'react'
-// import CityCard from './CityCard'
-
-// function CityCards() {
-//   const cities = [
-//     'bordeaux',
-//     'brest',
-//     'lille',
-//     'lyon',
-//     'marseille',
-//     'nantes',
-//     'paris',
-//     'la roche sur yon',
-//     'strasbourg',
-//     'toulouse',
-//   ]
-
-//   return (
-//     <div className="city-cards">
-//       {cities.map((city) => (
-//         <CityCard key={city} city={city} />
-//       ))}
-//     </div>
-//   )
-// }
-
-// export default CityCards
-
-import React from 'react'
-import stations from '../gares.json'
-// import traindata from "../train"
-import CityCard from './CityCard'
+import React, { useState } from 'react';
+import CityCard from './CityCard';
+import transformedData from '../transformData';
 
 
 function CityCards() {
-  const cities = Object.keys(stations)
+  const [selectedCity, setSelectedCity] = useState('');
+
+  const handleSelectChange = (event) => {
+    setSelectedCity(event.target.value);
+  };
+
+  const cities = Object.keys(transformedData);
+
   return (
     <div className="city-cards">
-      {cities.map((city) => (
-        <CityCard key={city} city={city} />
-      ))}
+      <select
+        value={selectedCity}
+        onChange={handleSelectChange}
+        placeholder="Sélectionner une ville..."
+      >
+        <option value="" disabled>Sélectionner une ville...</option>
+        {cities.map((city) => (
+          <option key={city} value={city}>
+            {city}
+          </option>
+        ))}
+      </select>
+      {selectedCity && (
+        <div className="city-list">
+          <CityCard key={selectedCity} city={selectedCity} />
+        </div>
+      )}
     </div>
-  )
+  );
 }
 
-export default CityCards
+export default CityCards;

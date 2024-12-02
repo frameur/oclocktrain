@@ -1,7 +1,9 @@
 import React from 'react'
 import { Outlet, useParams } from 'react-router-dom'
-import citiesStations from '../gares.json'
+// import citiesStations from '../gares.json'
 import TrainStations from '../components/TrainStations'
+import transformedData from '../transformData';
+
 
 
 function City() {
@@ -13,7 +15,7 @@ function City() {
         Homecity
       </a>
       <h2 className="city__name">{city}</h2>
-      <TrainStations stations={citiesStations[city]} />
+      <TrainStations stations={transformedData[city]} />
       <Outlet />
     </div>
   )

@@ -1,8 +1,27 @@
+// .city-cards {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 10px;
+//   width: 100%;
+//   // min-height: 80vh;
+//   border-radius: 10px;
+// }
 .city-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  width: 100%;
-  // min-height: 80vh;
-  border-radius: 10px;
+  text-align: center;
+  margin: 20px;
+
+  select {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  .city-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 }

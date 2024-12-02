@@ -23304,6 +23304,28 @@
             "commune": "VERSAILLES",
             "departements": "YVELINES"
         }
-    ]
+    ];
 
-export default traindata
+    const transformData = (traindata) => {
+        const result = {};
+      
+        traindata.forEach(item => {
+          const commune = item.commune.toLowerCase();
+          if (!result[commune]) {
+            result[commune] = {};
+          }
+          result[commune][item.libelle] = `stop_area:SNCF:${item["stop_area:SNCF"]}`;
+        });
+      
+          // Convertir l'objet en tableau de paires clé-valeur pour le tri
+  const sortedEntries = Object.entries(result).sort(([keyA], [keyB]) => keyA.localeCompare(keyB));
+
+  // Reconvertir le tableau trié en objet
+  const sortedResult = Object.fromEntries(sortedEntries);
+
+  return sortedResult;
+      };
+
+      const transformedData = transformData(traindata);
+
+      export default transformedData;

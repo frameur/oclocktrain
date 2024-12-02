@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 function CityCard({ city }) {
   console.log(city);
   return (
+    
     <Link
       to={`${city}`}
       className="city-card"
@@ -13,6 +14,7 @@ function CityCard({ city }) {
       <ul>
         <li className="city-card__name">{city}</li>
       </ul>
+    
     </Link>
   )
 }
