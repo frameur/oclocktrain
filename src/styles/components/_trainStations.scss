@@ -1,8 +1,13 @@
 .train-stations {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     width: 90%;
     margin: 2rem auto;
+   
+
+   
 
     @media screen and (max-width: 900px) {
         flex-direction: column;
@@ -42,6 +47,12 @@
         span {
             transition: all 0.5s ease-in-out;
             position: relative;
+            color: rgb(2, 37, 59);
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+           
+            
 
             &:after {
                 content: "";

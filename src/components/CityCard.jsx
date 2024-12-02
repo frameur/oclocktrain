@@ -9,7 +9,7 @@ function CityCard({ city }) {
     <Link
       to={`${city}`}
       className="city-card"
-      style={{ backgroundImage: `url('./images/${city}.webp')` }}
+      // style={{ backgroundImage: `url('./images/${city}.webp')` }}
     >
       <ul>
         <li className="city-card__name">{city}</li>
