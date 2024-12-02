@@ -1,26 +1,24 @@
-import React from 'react'
-import propTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 
 function CityCard({ city }) {
-  console.log(city);
   return (
-    
     <Link
-      to={`${city}`}
+      to={`/${city}`}
       className="city-card"
-      // style={{ backgroundImage: `url('./images/${city}.webp')` }}
+      style={{ backgroundImage: `url('./images/${city}.webp')` }}
     >
-      <ul>
-        <li className="city-card__name">{city}</li>
-      </ul>
-    
+      <div className="city-card__content">
+        <h3 className="city-card__name">{city}</h3>
+      </div>
     </Link>
-  )
+  );
 }
 
 CityCard.propTypes = {
-  city: propTypes.string.isRequired,
-}
+  city: PropTypes.string.isRequired,
+};
 
-export default CityCard
+export default CityCard;

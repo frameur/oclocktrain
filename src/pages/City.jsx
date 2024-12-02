@@ -1,13 +1,12 @@
-import React from 'react'
-import { Outlet, useParams } from 'react-router-dom'
-// import citiesStations from '../gares.json'
-import TrainStations from '../components/TrainStations'
+import React from 'react';
+import { Outlet, useParams } from 'react-router-dom';
+import TrainStations from '../components/TrainStations';
 import transformedData from '../transformData';
 
 
-
 function City() {
-  const { city } = useParams()
+  const { city } = useParams();
+  const cityData = transformedData[city.toLowerCase()];
 
   return (
     <div className="city">
@@ -15,10 +14,10 @@ function City() {
         Homecity
       </a>
       <h2 className="city__name">{city}</h2>
-      <TrainStations stations={transformedData[city]} />
+      {cityData && <TrainStations stations={cityData} />}
       <Outlet />
     </div>
-  )
+  );
 }
 
-export default City
+export default City;
